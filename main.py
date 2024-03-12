@@ -45,7 +45,7 @@ async def get_3d_file(seed: str):
         downloadURL = f"https://{os.getenv('AWS_S3_BUCKET_NAME')}.s3.{os.getenv('AWS_S3_REGION')}.amazonaws.com/{x}"   
 
         return {
-            downloadURL: downloadURL
+            "downloadURL": downloadURL
         }
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
