@@ -21,6 +21,8 @@ if torch.cuda.is_available():
 else:
     device = "cpu"
 
+print(device)
+
 model = TSR.from_pretrained(
     "stabilityai/TripoSR",
     config_name="config.yaml",
