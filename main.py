@@ -17,7 +17,7 @@ s3_client = boto3.client(
     region_name=os.getenv('AWS_S3_REGION')
 )
 
-client = Client("https://1fecaa770204d8b7be.gradio.live")
+client = Client(os.getenv('GRADIO_SERVER_URL'))
 
 app = FastAPI()
 app.add_middleware(
