@@ -8,3 +8,6 @@ rembg
 huggingface-hub
 imageio[ffmpeg]
 gradio
+boto3
+python-dotenv
+uvicorn
